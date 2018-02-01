@@ -1,3 +1,144 @@
-App {
+body {
+  color: #000;
+}
 
+* {
+  box-sizing: border-box;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  &:hover {
+    cursor: pointer;
+    opacity: .7;
+  }
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  .app__header {
+
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #595757;
+    padding: 10px 20px;
+  }
+  .header__title {
+
+  }
+  .header__sum {
+    font-weight: 600;
+  }
+
+  .title-red {
+    color: #C7325C;
+  }
+
+  .app__main {
+
+  }
+
+  .main {
+    margin-top: 15px;
+  }
+
+  .main__fill {
+    height: 15px;
+    background-color: #C7325C;
+    border-bottom: 1px solid grey;
+
+  }
+  .main__content {
+
+    padding: 15px;
+    border: 1px solid grey;
+  }
+  .content {
+
+  }
+  .content__title {
+
+  }
+  .content__desc {
+    margin: 15px 0;
+  }
+  .content__paid {
+    margin: 0 -10px;
+  }
+  .content__why {
+
+  }
+  .link {
+    text-decoration: none;
+    color: #9164ff;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+  .form {
+    display: flex;
+
+    .form__field {
+      padding: 10px;
+      width: 50%;
+
+    }
+
+    .form__input {
+      border-radius: 5px;
+      font-size: 20px;
+      width: 100%;
+      padding: 15px;
+      padding-left: 25px;
+      background-color: transparent;
+      border: 1px solid grey;
+      background: url(images/dollar-icon.png) no-repeat 5px center;
+      background-size: 20px;
+    }
+
+    .form__btn {
+      font-size: 20px;
+      border: 0;
+      width: 100%;
+      height: 100%;
+      padding: 15px;
+      background-color: green;
+      text-transform: capitalize;
+      font-weight: 600;
+      border-radius: 5px;
+    }
+  }
+
+  .footer {
+    display: flex;
+    margin-top: 15px;
+  }
+  .footer__save {
+    width: 50%;
+    padding: 10px 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-right: 15px;
+    font-weight: 600;
+
+  }
+
+  .footer__tell {
+    @extend .footer__save;
+    margin-right: 0;
+  }
 }
