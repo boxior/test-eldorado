@@ -12,9 +12,7 @@ class List extends Component {
         this.state = {
             items: ""
         };
-
     }
-
 
     getJson = (url, callback) => {
         let xhr = new XMLHttpRequest();
@@ -36,7 +34,7 @@ class List extends Component {
         const item = data.map((el, index) => {
             return (
                 <li key={index} className="list__item">
-                    <a href={el.link.attributes.href} className="list__link">{el.title.label}</a>
+                    <a href={el.link.attributes.href} className="list__link" target="_blank">{el.title.label}</a>
                 </li>
             );
         });

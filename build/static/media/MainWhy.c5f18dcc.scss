@@ -1,0 +1,12 @@
+.content__why {
+
+}
+.link {
+  text-decoration: none;
+  color: #9164ff;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
