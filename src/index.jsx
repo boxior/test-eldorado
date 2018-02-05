@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import App from './App';
+import Navigation from './Components/Navigation/Navigation';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+    <Navigation/>,
+    document.getElementById("root")
+);
 registerServiceWorker();
+
