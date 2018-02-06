@@ -1,5 +1,7 @@
 https://boxior.github.io/test-eldorado/build/index.html
 
+Можно перейти по ссылке выше или склонировать проект и запустить командой 'npm start'.
+
 В задании использовал Scss с компиляцией в PostCss в build, autoprefixer для кроссбраузерности  (пришлось покопаться в webpack.config.dev.js и webpack.config.prod.js)
 
 Использовал react-router.
