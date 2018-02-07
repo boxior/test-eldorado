@@ -29,5 +29,10 @@
     .nav__donate {
       margin-right: 0;
     }
+
+    .nav--active {
+      border: 1px solid orange;
+      color: orange;
+    }
   }
 }
