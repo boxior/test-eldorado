@@ -12,6 +12,14 @@ class List extends Component {
         this.state = {
             items: ""
         };
+
+        this.getJson(this.obj.url, (err, data) => {
+            if (err !== null) {
+                console.log('Something went wrong: ' + err);
+            } else {
+                this.createList(data.feed.entry);
+            }
+        });
     }
 
     getJson = (url, callback) => {
@@ -30,7 +38,6 @@ class List extends Component {
     };
 
     createList = (data) => {
-
         const item = data.map((el, index) => {
             return (
                 <li key={index} className="list__item">
@@ -42,14 +49,6 @@ class List extends Component {
     };
 
     render() {
-        this.getJson(this.obj.url, (err, data) => {
-            if (err !== null) {
-                console.log('Something went wrong: ' + err);
-            } else {
-                this.createList(data.feed.entry);
-            }
-        });
-
         return (
             <div className="list-wrapper">
                 <ListItems items={this.state.items}/>
